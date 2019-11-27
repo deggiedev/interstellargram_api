@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :postlikes
   resources :likes
-  resources :posts
   resources :users
+  resources :posts
   post '/login', to: 'auth#create'
   get '/validate', to: 'auth#validate_token'
 
