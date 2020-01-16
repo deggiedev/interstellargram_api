@@ -11,6 +11,8 @@ class PostsController < ApplicationController
     end
 
     def index
+        #posts = Post.new.get_data
+        #render json: posts
         render json: Post.all
     end
 
