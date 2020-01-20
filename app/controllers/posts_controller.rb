@@ -13,6 +13,8 @@ class PostsController < ApplicationController
     def index
         #posts = Post.new.get_data
         #render json: posts
+        #cloudinary resource render without current user at this stage
+
         render json: Post.all
     end
 
