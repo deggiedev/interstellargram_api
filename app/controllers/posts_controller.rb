@@ -15,6 +15,7 @@ class PostsController < ApplicationController
         #render json: posts
         #cloudinary resource render without current user at this stage
         #use dropzone instead
+        #or more cumbersome form (rendered through posts below)
 
         render json: Post.all
     end
